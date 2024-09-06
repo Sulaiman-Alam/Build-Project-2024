@@ -1,0 +1,21 @@
+StadiumName,City,Capacity
+KnightStadium,NYC,15000
+Roundtable,Washington,20000
+GladiatorArena,Los Angeles,25000
+VictoryDome,Chicago,30000
+DragonField,Boston,18000
+PhoenixGrounds,Miami,22000
+LionHeartPark,Dallas,21000
+CrusaderColiseum,San Francisco,27000
+ThunderArena,Houston,23000
+EagleStadium,Philadelphia,16000
+TitanTerrace,Atlanta,20000
+SpartanStadium,Detroit,24000
+SamuraiField,Seattle,19000
+CenturionPark,Denver,25000
+HerculesArena,Las Vegas,31000
+ChampionDome,Phoenix,28000
+WarriorGrounds,Orlando,17000
+VanguardStadium,San Diego,26000
+PatriotField,Charlotte,19000
+DefenderColiseum,Minneapolis,30000

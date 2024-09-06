@@ -1,0 +1,21 @@
+TeamName,City,StadiumId
+NYC Knights,NYC,1
+Washington Roundtable Royals,Washington,2
+LA Gladiators,Los Angeles,3
+Chicago Victors,Chicago,4
+Boston Dragons,Boston,5
+Miami Phoenix,Miami,6
+Dallas Lionhearts,Dallas,7
+San Francisco Crusaders,San Francisco,8
+Houston Thunderbolts,Houston,9
+Philadelphia Eagles,Philadelphia,10
+Atlanta Titans,Atlanta,11
+Detroit Spartans,Detroit,12
+Seattle Samurais,Seattle,13
+Denver Centurions,Denver,14
+Las Vegas Hercules,Las Vegas,15
+Phoenix Champions,Phoenix,16
+Orlando Warriors,Orlando,17
+San Diego Vanguards,San Diego,18
+Charlotte Patriots,Charlotte,19
+Minneapolis Defenders,Minneapolis,20
