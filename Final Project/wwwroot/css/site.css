@@ -1,0 +1,49 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background: #6a11cb;
+    background: linear-gradient(to top, rgba(94, 131, 68, 0.8), rgba(37, 117, 252, 1));
+    color: white !important;
+}
+
+nav {
+    background: linear-gradient(to top, rgba(37, 117, 252, 1), rgba(106, 17, 203, 1));
+    color: white !important;
+}
+
+a {
+    color: white !important;
+}
+
+.btn-primary {
+    background-color: orange !important;
+    color: black !important;
+}
+
+.btn-secondary {
+    background-color: yellow !important;
+    color: black !important;
+}
+
+.table-container {
+    border: 5px white solid;
+    border-radius: 10px;
+}
