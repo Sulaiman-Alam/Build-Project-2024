@@ -1,0 +1,49 @@
+﻿@page
+@model BuildProjectSummer2024.Pages.Team.IndexModel
+@{
+	ViewData["Title"] = "List of Teams";
+}
+
+<h2>Teams List</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Id</th>
+            <th>City</th>
+            <th>Stadium</th>
+            <th># Of Players</th>
+        </tr>
+    </thead>
+	<tbody>
+        @foreach (var Team in Model.Teams)
+        {
+            <tr>
+                <td>@Team.TeamName</td>
+                <td>@Team.Id</td>
+                <td>@Team.City</td>
+                <td>@Team.Stadium.StadiumName</td>
+                <td>
+                    <a asp-page="/Player/Index" asp-route-TeamId="@Team.Id">
+                        @Team.PlayerCount
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="pagination">
+    @if (Model.HasPreviousPage)
+    {
+        <a class="btn btn-primary m-1" asp-page="./Index"
+           asp-route-pageIndex="@(Model.PageIndex - 1)">Previous</a>
+    }
+
+    @if (Model.HasNextPage)
+    {
+        <a class="btn btn-primary m-1" asp-page="./Index"
+           asp-route-pageIndex="@(Model.PageIndex + 1)">Next</a>
+    }
+</div>

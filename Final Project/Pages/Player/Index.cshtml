@@ -1,0 +1,64 @@
+﻿@page
+@model BuildProjectSummer2024.Pages.Player.IndexModel
+@{
+	ViewData["Title"] = "List of Players";
+}
+
+@if (Model.TeamName != null)
+{
+    <h2>Patient List for @Model.TeamName</h2>
+}
+else
+{
+    <h2>Patient List </h2>
+}
+
+<div class="table-container">
+<table class="table">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last name</th>
+            <th>Player Id</th>
+            <th>Date of Birth</th>
+            <th>Country of Origin</th>
+            <th>Role</th>
+            <th>Team</th>
+            <th>Gender</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var Player in Model.Players)
+        {
+            <tr>
+                <td>@Player.FirstName</td>
+                <td>@Player.LastName</td>
+                <td>@Player.Id</td>
+                <td>@Player.Dob</td>
+                <td>@Player.Country</td>
+                <td>@Player.RoleName</td>
+                <td>@Player.TeamName</td>
+                <td>@Player.Gender</td>
+                <td>
+                    <a class="btn btn secondary" asp-page="./Edit" asp-route-id="@Player.Id">Edit</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+</div>
+
+<div class="pagination">
+    @if (Model.HasPreviousPage)
+    {
+        <a class="btn btn-primary m-1" asp-page="./Index"
+           asp-route-pageIndex="@(Model.PageIndex - 1)">Previous</a>
+    }
+
+    @if (Model.HasNextPage)
+    {
+        <a class="btn btn-primary m-1" asp-page="./Index"
+           asp-route-pageIndex="@(Model.PageIndex + 1)">Next</a>
+    }
+</div>
