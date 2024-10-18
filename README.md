@@ -1,5 +1,5 @@
 # Build-Project-2024
-This is the Github Repository for my 2024 Builds Project!
+This is the Github Repository for my 2024 Build Project!
 
 ## About Me!
 My name is Sulaiman Alam, and I'm going into my Junior year at Queens College, as a Computer Science and Applied Mathematics Major! I can't wait to work on this project!
